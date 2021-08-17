@@ -1,5 +1,4 @@
 import React from "react";
-import "./Header.scss";
 
 function Header() {
 	return (
@@ -10,14 +9,6 @@ function Header() {
 						SKY KUMTONG
 					</a>
 
-					<a
-						href="#off-canvas"
-						className="navbar-toggle collapsed"
-						data-toggle="collapse"
-						data-offcanvas-trigger="off-canvas"
-						aria-expanded="false"
-					></a>
-
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -26,12 +17,14 @@ function Header() {
 						aria-controls="navbarCollapse"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
-						data-offcanvas-trigger="off-canvas"
 					>
 						<span className="navbar-toggler-icon"></span>
 					</button>
 
-					<div className="collapse navbar-collapse" id="navbarCollapse">
+					<div
+						className="collapse navbar-collapse justify-content-end"
+						id="navbarCollapse"
+					>
 						<ul className="navbar-nav">
 							<li className="nav-item active">
 								<a className="nav-link" href="#" aria-current="page">
@@ -39,17 +32,17 @@ function Header() {
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
+								<a className="nav-link" href="#about">
 									About Me
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
+								<a className="nav-link" href="#projects">
 									Projects
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link text-truncate" href="#">
+								<a className="nav-link" href="#contact">
 									Contact Me
 								</a>
 							</li>
